@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPARTA & SPARTAFICIAL | Ronald Veth</title>
+  <meta name="description" content="SPARTA: a standardized test automation framework with building blocks, accelerators, and guardrails. SPARTAFICIAL adds AI-driven test generation on top.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Ronald <span>Veth</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="sparta.html">SPARTAficial</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="clinic.html">Clinic</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <!-- SPARTA Hero -->
+    <section class="sparta-hero">
+      <div class="sparta-hero-img">
+        <img src="images/spartan.jpg" alt="SPARTA warrior mascot" class="spartan-pic">
+      </div>
+      <div class="sparta-hero-text">
+        <h1>SPARTA<span>ficial</span></h1>
+        <p class="hero-subtitle">Simply, Powerful, Automated, Regression, Test, Architecture.</p>
+      </div>
+    </section>
+
+    <!-- SPARTA -->
+    <section class="section">
+      <h2 class="section-title"><span>//</span> What Is SPARTA?</h2>
+      <div class="prose">
+        <p>SPARTA is the test automation framework I designed at Cerios. It exists because of a pattern I kept seeing: a team builds a quick proof-of-concept, it works, stakeholders are happy, and before anyone notices the PoC <em>becomes</em> the production framework. Six months later it's a tangled mess that nobody fully understands, every change risks breaking something, and the team has lost confidence in their own tests.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span>//</span> The Problem</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>PoC-to-Production</h3>
+          <p>Frameworks that grew organically from a proof-of-concept. No architecture, no standards, just layers of quick fixes on top of each other.</p>
+        </div>
+        <div class="card">
+          <h3>Blind Spots</h3>
+          <p>One person built the framework. That person left. Now nobody truly understands why things work, or why they suddenly don't.</p>
+        </div>
+        <div class="card">
+          <h3>Fragile Tests</h3>
+          <p>A small change in the application breaks half the test suite. Not because the tests were wrong, but because the framework had no isolation or proper abstractions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span>//</span> The Solution: Layered Architecture</h2>
+      <div class="prose">
+        <p>SPARTA solves this with a clear, layered architecture. Each layer has a specific purpose, and the boundaries between them are strict.</p>
+      </div>
+
+      <div class="sparta-layers">
+        <div class="sparta-layer layer-spartaficial">SPARTAFICIAL: AI-Driven Test Generation</div>
+        <div class="sparta-layer layer-guardrails">Guardrails: Linting, Standards, Quality Gates</div>
+        <div class="sparta-layer layer-accelerators">Accelerators: Cerios npm Packages</div>
+        <div class="sparta-layer layer-building-blocks">Building Blocks: Pages, APIs, Components, Data Builders</div>
+        <div class="sparta-layer layer-playwright">Playwright: Open Source Foundation</div>
+      </div>
+
+      <div class="card-grid" style="margin-top: 24px;">
+        <div class="card">
+          <h3>Building Blocks</h3>
+          <p>The foundation. Page objects, API clients, component abstractions, data builders. All standardized, all following the same patterns. A new team member recognizes the structure immediately because it's consistent.</p>
+        </div>
+        <div class="card">
+          <h3>Accelerators</h3>
+          <p>The <a href="packages.html">open-source npm packages</a> that speed up common tasks: test data builders, custom matchers, table assertions, step decorators. Reusable across projects, not tied to any specific client.</p>
+        </div>
+        <div class="card">
+          <h3>Guardrails</h3>
+          <p>Linting rules, naming conventions, and quality gates that prevent the framework from degrading over time. The guardrails make it hard to do the wrong thing and easy to do the right thing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span>//</span> Why It Works</h2>
+      <div class="prose">
+        <ul>
+          <li><strong>Standardized:</strong> Every SPARTA project looks the same. Teams can move between projects without relearning the framework.</li>
+          <li><strong>AI-friendly:</strong> Clear structure and guardrails mean AI can generate tests that actually fit the architecture. No spaghetti.</li>
+          <li><strong>Open foundation:</strong> Built on Playwright (open source) and extended with Cerios packages (MIT license). No vendor lock-in on the core.</li>
+          <li><strong>Proven:</strong> Deployed at AZL, TenneT, Robeco, It&Care, De Alliantie, RWS, and Enenco.</li>
+        </ul>
+      </div>
+      <div class="callout">
+        "SPARTA ensures you do it RIGHT. SPARTAFICIAL helps you do it FAST."
+      </div>
+    </section>
+
+    <!-- SPARTAFICIAL -->
+    <section class="section">
+      <h2 class="section-title"><span>//</span> SPARTAFICIAL</h2>
+      <div class="prose">
+        <p>SPARTAFICIAL is the AI layer on top of SPARTA. It's not a separate product. It's what happens when you combine a well-structured framework with AI that actually understands that structure.</p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>1. Introspection</h3>
+          <p>The SPARTAFICIAL introspector reads your SPARTA building blocks via an API. It understands your pages, your API clients, your data builders, and your entire test vocabulary.</p>
+        </div>
+        <div class="card">
+          <h3>2. Your LLM, Your Data</h3>
+          <p>Connect your own LLM API key. Your code and test logic never leave your infrastructure. SPARTAFICIAL sends the building block context to <em>your</em> AI provider.</p>
+        </div>
+        <div class="card">
+          <h3>3. Chatbot-Driven Generation</h3>
+          <p>Describe what you want to test in natural language. SPARTAFICIAL generates tests that use your existing building blocks, not generic code that ignores your framework.</p>
+        </div>
+      </div>
+
+      <div class="prose" style="margin-top: 24px;">
+        <p>The key insight: the building blocks are made by <strong>test automators who understand code</strong>. AI uses those blocks to compose tests. This means the generated tests follow your standards, use your page objects, call your API clients, and build data through your builders, from day one.</p>
+        <p>Without structure, AI generates compilable spaghetti. With SPARTA's guardrails and building blocks, AI generates tests that belong in your codebase.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://github.com/vethman" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/ronald-veth-spartaficial/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.npmjs.com/org/cerios" target="_blank" rel="noopener">npm</a>
+      <a href="https://www.cerios.nl" target="_blank" rel="noopener">Cerios</a>
+    </div>
+    <p>Ronald Veth | Principal Test Automation Consultant at Cerios</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

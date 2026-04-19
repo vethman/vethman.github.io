@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ronald Veth | Principal Test Automation Consultant</title>
+  <meta name="description" content="Ronald Veth is a principal test automation consultant at Cerios, specializing in architecture-first test frameworks, TypeScript, Playwright, and the SPARTA framework.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Ronald <span>Veth</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="sparta.html">SPARTAficial</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="clinic.html">Clinic</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-photo">
+        <img src="images/profile.jpg" alt="Ronald Veth" class="profile-pic">
+      </div>
+      <div class="hero-text">
+        <h1>Ronald <span>Veth</span></h1>
+        <p class="hero-subtitle">Principal Test Automation Consultant at <a href="https://www.cerios.com/" target="_blank">Cerios</a></p>
+        <div class="hero-meta">
+          <span>📍 The Netherlands</span>
+          <span>🎂 <span id="dynamic-age"></span> years old</span>
+          <span>💼 12+ years in test automation</span>
+        </div>
+        <div class="btn-group">
+          <a href="https://github.com/vethman" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/ronald-veth-spartaficial/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.npmjs.com/org/cerios" class="btn btn-outline" target="_blank" rel="noopener">npm</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who I Am -->
+    <section class="section">
+      <h2 class="section-title"><span>//</span> Who I Am</h2>
+      <div class="prose">
+        <p>I'm a test automation architect who believes great frameworks aren't born from proof-of-concepts. They're <strong>designed from architecture</strong>. After 12+ years of building, breaking, and rebuilding test solutions across finance, energy, healthcare, and logistics, I've seen what happens when a PoC quietly becomes the production framework: blind spots that nobody understands, changes that break everything, and teams that lose trust in their own tests.</p>
+        <p>My job is to prevent that. At <strong>Cerios</strong>, I advise organisations on test automation strategy, design frameworks that scale, build reusable open-source tooling, coach teams, and deliver hands-on. I'm equally comfortable in a boardroom explaining why architecture matters as I am writing Playwright fixtures in TypeScript.</p>
+        <p>I hold an HBO Informatica degree from Hogeschool Rotterdam and serve on the <strong>program committee of Test Automation Days</strong>, where I review abstracts and help shape the conference agenda.</p>
+      </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="section">
+      <h2 class="section-title"><span>//</span> Architecture First</h2>
+      <div class="prose">
+        <p>Every framework I build starts with a question: <strong>what does the architecture demand?</strong> Not "what's the quickest test I can write." Understanding the system under test, including its APIs, data flows, authentication, and integration points, determines the framework's shape. The building blocks come from that analysis, not from a generic template.</p>
+        <p>This philosophy drives everything I do: from the <a href="sparta.html">SPARTA framework</a> with its standardized building blocks, to the <a href="packages.html">open-source packages</a> I publish on npm, to the way I coach teams to think about test design.</p>
+      </div>
+      <div class="callout">
+        "A good test framework is one where a new team member can write their first meaningful test within a day. Not because it's simple, but because it's well-structured."
+      </div>
+    </section>
+
+    <!-- Why TypeScript -->
+    <section class="section">
+      <h2 class="section-title"><span>//</span> Why TypeScript</h2>
+      <div class="prose">
+        <p>I started in C#, moved through Java, and landed firmly on <strong>TypeScript</strong> as the language for modern test automation. Here's why:</p>
+        <ul>
+          <li><strong>JSON-native:</strong> APIs speak JSON. TypeScript understands it natively. No serialization libraries, no mapping layers.</li>
+          <li><strong>Zod for contracts:</strong> Generate schemas from OpenAPI specs, validate API responses at runtime with full type safety. When the API changes, the tests break at exactly the right place.</li>
+          <li><strong>Utility types:</strong> <code>Pick</code>, <code>Partial</code>, and <code>Omit</code> let you write type-safe assertions on exactly the fields you care about, ignoring the rest without losing confidence.</li>
+          <li><strong>Playwright:</strong> Best-in-class browser automation, built for TypeScript. Fixtures for dependency injection, custom engines for component testing, trace viewer for debugging. It's the full package.</li>
+        </ul>
+        <p>TypeScript gives test automators the expressiveness of a scripting language with the safety net of a typed one. That's a rare combination.</p>
+      </div>
+    </section>
+
+    <!-- AI Standpoint -->
+    <section class="section">
+      <h2 class="section-title"><span>//</span> My Take on AI</h2>
+      <div class="prose">
+        <p>I'm a fan of AI in test automation, but with a clear boundary. AI is a <strong>copilot, not the pilot</strong>. The moment you can't explain what your test asserts and why, you've lost control.</p>
+      </div>
+      <div class="callout">
+        "The pilot must still be able to fly the plane, even with a copilot on board."
+      </div>
+      <div class="prose">
+        <p>Here's the reality: AI generates compilable code fast. But compilable isn't the same as correct, maintainable, or meaningful. Without structure, AI produces spaghetti that passes today and mystifies everyone tomorrow.</p>
+        <p>That's exactly why I built <a href="sparta.html">SPARTAFICIAL</a>, an AI layer that works <em>within</em> the guardrails of a proper framework. The building blocks are made by test automators who understand code. AI uses those blocks to generate tests against your specific domain. Structure first, speed second.</p>
+        <p>AI also changes how we think about tooling. Every package I build is designed with <strong>token awareness</strong> in mind: small, focused packages that accelerate test creation. When AI generates a test, it should be able to use these building blocks instead of regenerating everything from scratch each time.</p>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section">
+      <h2 class="section-title"><span>//</span> Certifications</h2>
+
+      <h3 style="margin-bottom: 12px; color: var(--text-primary);">Testing & Quality</h3>
+      <div class="prose" style="margin-bottom: 20px;">
+        <span class="tag">Selenium Tester Foundation, ISTQB (2020)</span>
+        <span class="tag">Certified Agile Tester, iSQI (2017)</span>
+        <span class="tag">ISTQB Certified Tester, Foundation Level (2015)</span>
+        <span class="tag">TMap NEXT Test Engineer, EXIN (2013)</span>
+      </div>
+
+      <h3 style="margin-bottom: 12px; color: var(--text-primary);">Development</h3>
+      <div class="prose" style="margin-bottom: 20px;">
+        <span class="tag">Programming in C# (70-483), Microsoft (2021)</span>
+      </div>
+
+      <h3 style="margin-bottom: 12px; color: var(--text-primary);">Infrastructure & Platform</h3>
+      <div class="prose" style="margin-bottom: 20px;">
+        <span class="tag">Core Solutions of SharePoint Server 2013, Microsoft (2013)</span>
+        <span class="tag">MCSA Windows Server 2008, Microsoft (2013)</span>
+        <span class="tag">Server Administrator on Windows Server 2008, Microsoft (2013)</span>
+        <span class="tag">Windows Server 2008 Active Directory, Microsoft (2012)</span>
+        <span class="tag">Windows Server 2008 Network Infrastructure, Microsoft (2012)</span>
+      </div>
+
+      <h3 style="margin-bottom: 12px; color: var(--text-primary);">Methodology & Management</h3>
+      <div class="prose" style="margin-bottom: 20px;">
+        <span class="tag">Impact!, Boertien Vergouwen Overduin (2015)</span>
+        <span class="tag">Lean Competency LCS Level 1a (2014)</span>
+        <span class="tag">PRINCE2 Foundation, APMG (2013)</span>
+        <span class="tag">ITIL Foundation, EXIN (2012)</span>
+      </div>
+
+      <h3 style="margin-bottom: 12px; color: var(--text-primary);">General IT</h3>
+      <div class="prose">
+        <span class="tag">ECDL Foundation, ICDL Europe (2011)</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://github.com/vethman" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/ronald-veth-spartaficial/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.npmjs.com/org/cerios" target="_blank" rel="noopener">npm</a>
+      <a href="https://www.cerios.nl" target="_blank" rel="noopener">Cerios</a>
+    </div>
+    <p>Ronald Veth | Principal Test Automation Consultant at Cerios</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
